@@ -13,6 +13,7 @@ jobs:
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          THREAD_ID: ${{ secrets.TELEGRAM_TOPIC_ID }}
         run: |
           if [ -n "$CHANNEL_ID" ]; then
             # 生成当前年月的网站页面链接（格式：YYYYMM）
