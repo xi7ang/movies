@@ -1,11 +1,11 @@
-name: 'AIknowledge Notify'
-description: 'A simple GitHub Action to print a message'
+name: 'Movies Notify'
+description: 'Notification action for movies repository'
 author: 'mswnlz'
 inputs:
   message:
     description: 'The message to print'
     required: false
-    default: 'Hello from AIknowledge Action!'
+    default: 'Hello from Movies Action!'
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'index.js'
